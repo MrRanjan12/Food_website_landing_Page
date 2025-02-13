@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Saahu Mistan</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Welcome to Foodie</h1>
+        <p>Experience the best food in town!</p>
+        <button onclick="orderNow()">Order Now</button>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about delivering delicious and healthy meals.</p>
+        <img src="images/about.jpg" alt="About Us">
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <img src="images/delivery.jpg" alt="Online Delivery">
+                <h3>Online Delivery</h3>
+            </div>
+            <div class="service-box">
+                <img src="images/catering.jpg" alt="Catering">
+                <h3>Catering</h3>
+            </div>
+            <div class="service-box">
+                <img src="images/dinein.jpg" alt="Dine-in Experience">
+                <h3>Dine-in Experience</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@foodie.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+    
+    <section id="signin">
+        <h2>Sign In</h2>
+        <form onsubmit="return validateSignIn()">
+            <input type="email" placeholder="Email" id="signin-email" required>
+            <input type="password" placeholder="Password" id="signin-password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </section>
+    
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form onsubmit="return validateSignUp()">
+            <input type="text" placeholder="Name" id="signup-name" required>
+            <input type="email" placeholder="Email" id="signup-email" required>
+            <input type="password" placeholder="Password" id="signup-password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff4d4d;
+    padding: 15px 50px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    background: #ff4d4d;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: #cc0000;
+}
+
+/* About Us Section */
+#about {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Services Section */
+#services {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    background: #222;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Sign In & Sign Up Sections */
+#signin, #signup {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+}
+
+form input {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    font-size: 18px;
+    color: white;
+    background: #ff4d4d;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #cc0000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input {
+        width: 80%;
+    }
+}
